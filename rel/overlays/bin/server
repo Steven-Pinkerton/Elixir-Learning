@@ -2,6 +2,6 @@
 cd -P -- "$(dirname -- "$0")"
 
 # Always run migrations
-./elixir_boilerplate eval ElixirBoilerplate.Release.migrate
+./elixir-_learning eval Elixir-Learning.Release.migrate
 
-exec ./elixir_boilerplate start
+exec ./elixir-_learning start

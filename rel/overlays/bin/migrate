@@ -1,4 +1,4 @@
 #!/bin/sh
 cd -P -- "$(dirname -- "$0")"
 
-exec ./elixir_boilerplate eval ElixirBoilerplate.Release.migrate
+exec ./elixir-_learning eval Elixir-Learning.Release.migrate

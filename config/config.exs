@@ -2,23 +2,23 @@ import Config
 
 version = Mix.Project.config()[:version]
 
-config :elixir_boilerplate,
-  ecto_repos: [ElixirBoilerplate.Repo],
+config :elixir-_learning,
+  ecto_repos: [Elixir-Learning.Repo],
   version: version
 
 config :phoenix, :json_library, Jason
 
-config :elixir_boilerplate, ElixirBoilerplateWeb.Endpoint,
-  pubsub_server: ElixirBoilerplate.PubSub,
-  render_errors: [view: ElixirBoilerplateWeb.Errors.View, accepts: ~w(html json)]
+config :elixir-_learning, Elixir-LearningWeb.Endpoint,
+  pubsub_server: Elixir-Learning.PubSub,
+  render_errors: [view: Elixir-LearningWeb.Errors.View, accepts: ~w(html json)]
 
-config :elixir_boilerplate, ElixirBoilerplate.Repo, start_apps_before_migration: [:ssl]
+config :elixir-_learning, Elixir-Learning.Repo, start_apps_before_migration: [:ssl]
 
-config :elixir_boilerplate, Corsica, allow_headers: :all
+config :elixir-_learning, Corsica, allow_headers: :all
 
-config :elixir_boilerplate, ElixirBoilerplate.Gettext, default_locale: "en"
+config :elixir-_learning, Elixir-Learning.Gettext, default_locale: "en"
 
-config :elixir_boilerplate, ElixirBoilerplateWeb.Plugs.Security, allow_unsafe_scripts: false
+config :elixir-_learning, Elixir-LearningWeb.Plugs.Security, allow_unsafe_scripts: false
 
 config :esbuild,
   version: "0.16.4",

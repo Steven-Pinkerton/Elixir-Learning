@@ -1,9 +1,9 @@
-defmodule ElixirBoilerplate.Mixfile do
+defmodule Elixir-Learning.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :elixir_boilerplate,
+      app: :elixir-_learning,
       version: "0.0.1",
       erlang: "~> 25.0",
       elixir: "~> 1.13",
@@ -22,7 +22,7 @@ defmodule ElixirBoilerplate.Mixfile do
 
   def application do
     [
-      mod: {ElixirBoilerplate.Application, []},
+      mod: {Elixir-Learning.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -109,16 +109,16 @@ defmodule ElixirBoilerplate.Mixfile do
 
   defp dialyzer do
     [
-      plt_file: {:no_warn, "priv/plts/elixir_boilerplate.plt"},
+      plt_file: {:no_warn, "priv/plts/elixir-_learning.plt"},
       plt_add_apps: [:mix, :ex_unit]
     ]
   end
 
   defp releases do
     [
-      elixir_boilerplate: [
-        version: {:from_app, :elixir_boilerplate},
-        applications: [elixir_boilerplate: :permanent],
+      elixir-_learning: [
+        version: {:from_app, :elixir-_learning},
+        applications: [elixir-_learning: :permanent],
         include_executables_for: [:unix],
         steps: [:assemble, :tar]
       ]

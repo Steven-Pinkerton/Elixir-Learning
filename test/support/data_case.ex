@@ -1,4 +1,4 @@
-defmodule ElixirBoilerplate.DataCase do
+defmodule Elixir-Learning.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,16 +16,16 @@ defmodule ElixirBoilerplate.DataCase do
 
   alias Ecto.Adapters.SQL.Sandbox
   alias Ecto.Changeset
-  alias ElixirBoilerplate.Repo
+  alias Elixir-Learning.Repo
 
   using do
     quote do
-      alias ElixirBoilerplate.Repo
+      alias Elixir-Learning.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import ElixirBoilerplate.DataCase
+      import Elixir-Learning.DataCase
     end
   end
 

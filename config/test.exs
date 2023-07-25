@@ -14,13 +14,13 @@ defmodule TestEnvironment do
   end
 end
 
-config :elixir_boilerplate, ElixirBoilerplate.Repo,
+config :elixir-_learning, Elixir-Learning.Repo,
   pool: Ecto.Adapters.SQL.Sandbox,
   url: TestEnvironment.get_database_url()
 
-config :elixir_boilerplate, ElixirBoilerplateWeb.Endpoint, server: false
+config :elixir-_learning, Elixir-LearningWeb.Endpoint, server: false
 
 # This config is to output keys instead of translated message in test
-config :elixir_boilerplate, ElixirBoilerplate.Gettext, priv: "priv/null", interpolation: ElixirBoilerplate.GettextInterpolation
+config :elixir-_learning, Elixir-Learning.Gettext, priv: "priv/null", interpolation: Elixir-Learning.GettextInterpolation
 
 config :logger, level: :warn

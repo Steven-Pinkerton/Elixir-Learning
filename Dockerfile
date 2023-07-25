@@ -80,12 +80,12 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-WORKDIR "/opt/elixir_boilerplate"
-RUN chown nobody /opt/elixir_boilerplate
+WORKDIR "/opt/elixir-_learning"
+RUN chown nobody /opt/elixir-_learning
 
 # Only copy the final release from the build stage
-COPY --from=otp-builder --chown=nobody:root /app/_build/prod/rel/elixir_boilerplate ./
+COPY --from=otp-builder --chown=nobody:root /app/_build/prod/rel/elixir-_learning ./
 
 USER nobody
 
-CMD ["/opt/elixir_boilerplate/bin/server"]
+CMD ["/opt/elixir-_learning/bin/server"]

@@ -1,6 +1,6 @@
 import Config
 
-config :elixir_boilerplate, ElixirBoilerplateWeb.Endpoint,
+config :elixir-_learning, Elixir-LearningWeb.Endpoint,
   code_reloader: true,
   check_origin: false,
   watchers: [
@@ -10,11 +10,11 @@ config :elixir_boilerplate, ElixirBoilerplateWeb.Endpoint,
     patterns: [
       ~r{priv/gettext/.*$},
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
-      ~r{lib/elixir_boilerplate_web/.*(ee?x)$}
+      ~r{lib/elixir-_learning_web/.*(ee?x)$}
     ]
   ]
 
-config :elixir_boilerplate, ElixirBoilerplateWeb.Plugs.Security, allow_unsafe_scripts: true
+config :elixir-_learning, Elixir-LearningWeb.Plugs.Security, allow_unsafe_scripts: true
 
 config :logger, :console, format: "[$level] $message\n"
 
